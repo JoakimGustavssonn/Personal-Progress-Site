@@ -67,8 +67,10 @@ input[type=button]
 
 #topcontent p {
 	font-size: 80px;
-	padding-left: 30%;
-	padding-top: 2px;
+	margin: auto;
+   padding-top: 2px;
+   text-align:center;
+
 	
 }
 
@@ -88,13 +90,13 @@ input[type=button]
 
 @media screen and (max-width: 768px) {
 
-   #container {
+   #body {
     width: 90%;
   
    }
   
-   h1 {
-    font-size: 200%;
+   #topcontent p {
+    font-size: 100%;
    }
   
   }
