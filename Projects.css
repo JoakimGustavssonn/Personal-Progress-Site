@@ -37,6 +37,11 @@ font-family: Arial, Helvetica, sans-serif;
     color: black;
     
   }
+  .ProjectList {
+
+text-align: center;
+
+  }
 
   .ProjectList li {
 
@@ -50,7 +55,23 @@ font-family: Arial, Helvetica, sans-serif;
 	border-right: 2px solid darkgrey;
   border-bottom: 2px solid darkgrey;
   padding: 10px;
+  
   }
+
+  .ProjectList li a:link, a:visited {
+  
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+        
+    }
+    
+    .ProjectList li:hover {
+      background-color: #ddd;
+      color: black;
+      
+    }
+
+   
 
   .content {
     
