@@ -45,9 +45,9 @@ text-align: center;
 
   .ProjectList li {
 
-	height: 300px;
-    width: 400px;
-    float: left;
+	height: 225px;
+    width: 300px;
+    float: center;
 	margin: auto;
     text-align:center;
     border-top: 2px solid darkgrey;
