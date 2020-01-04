@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>MySite</title>
+    <title>Joakim Gustavsson</title>
     
     <link href="About-Me.css" rel="stylesheet" type="text/css" />
 	
@@ -11,8 +11,10 @@
   
   <body>
 	<section id="topcontent">
-  	<p> <a class="firstbutton" id="Redirect" href ="Start.html" >  <b>Joakim Gustavsson</b> </a> </p>
-	  <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" />
+  	<p> 
+		<b>Joakim Gustavsson</b>
+
+	  </p>
   	</section>
 	
 	
@@ -22,22 +24,29 @@
 	
 	<div id="me">
 
-	<img src="IMG_5971.JPEG" width="15%" height="15%" >
+	<img src="IMG_5971_Optimized.jpg" width="15%" height="15%" >
 
 	</div>
 	
 
 
 
+	<div class="Startbuttons">
+		<button onclick="myFunction()" class="dropbtn">Arbetserfarenhet</button>
+		<button onclick="myFunction0()" class="dropbtn">Utbildning</button>
+		<button onclick="myFunction01()" class="dropbtn">Kontakt</button>
+	  </div>
 
 
+
+ <div id="wholesection" class="wholesectionhide">
 
 
 	<div id="top">
 	<h1> <b>IT-tekniker Nybro Kommun</b> </h1>
-	<p> <i>April – December 2014</i> </p>
+	<h2> <i>April – December 2014</i> </h2>
 	
-	<p id="ReadMore"> Projektanställd på Nybro Kommun som IT-tekniker i samband med ett projekt vilket innebar uppgradering av klientparken till operativsystemet Windows 8.1 inom hela kommunen.
+	<p id="ReadMore1"> Projektanställd på Nybro Kommun som IT-tekniker i samband med ett projekt vilket innebar uppgradering av klientparken till operativsystemet Windows 8.1 inom hela kommunen.
 		 I projektet hade jag ett ansvar för att själva utförandet blev gjort enligt tidsplan (Migrering och eller ubyte av arbetsstation, när och var det skulle ske).
 		  Dokumentering så som inventering av datorer I samband med migreringen.
 		Jag har arbetat med ett ärendehanteringssystem ”Nilex” där support ärenden gällande klienter, skrivare, nätverk, epost och mobila enheter varit i fokus.
@@ -45,16 +54,17 @@
 		 Paketerade även enklare applikationer och distruberade dessa I programkatalogen (SCCM). Tagit emot ärenden och gett support/felsökning via telefon, fjärrstyrning och påplats. 
 		 </p>
 	
-	<p>  </p>
+	
 	
 	<div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		
+		<button onclick="myFunction1()" id="ReadMoreHide1" class="dropbtn">Läs mer</button>
+		
 		
 	  </div>
-	  <div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
-		
-	  </div>
+	  
+
+	  
 	
 	
 	
@@ -63,20 +73,20 @@
 
 	<div id="middle">
     <h1> <b>Konsult Experis IT</b> </h1>
-	<p> <i>Januari - Juli 2015</i> </p>
+	<h2> <i>Januari - Juli 2015</i> </h2>
 
 
-	<p> Anställd som Konsult på Experis IT som Supportspecialist.
+	<p id="ReadMore2"> Anställd som Konsult på Experis IT som Supportspecialist.
 		Mitt uppdrag var på ett globalt företag (Alstom) där jag fick hjälpa till att utföra ett migreringsprojekt (Uppgradera operativsystem från XP – Win7) samt att ta hand om Onsite support. 
 		Vi arbetade med ärendehanteringssystemet (BMC Remedy ITSM7) webb baserat. Vi fick in ärenden som Incidenter (Felanmälan) och Workorder (Beställningar av tillbehör, hårdvara och mjukvara, samt installationer). 
 		Jag gav support direkt till användaren, via telefon, remote, mail och lync. Jag fick ge support till mjukvara så som; VPN, CAD program (Tekla, Catia, Smarteam, Matlab, AutoCAD, Elcad, Elvis), Lotus Notes, Lync, Office – programvara med många fler. 
-		Jag fick även skapa Knowledgebase artiklar för att dokumentera lösningar av ärenden.  </p>
+		Jag fick även skapa Knowledgebase artiklar för att dokumentera lösningar av ärenden.  </pid="ReadMore1">
 	
-	<p>  </p>
+		
 	
 
 	<div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		<button onclick="myFunction2()" id="ReadMoreHide2" class="dropbtn">Läs mer</button>
 		
 	  </div>
 
@@ -85,10 +95,10 @@
 	
 	<div id="bottom1">
 	<h1> <b>Konsult Sigma IT Consulting</b> </h1>
-	<p> <i>December 2015 – Oktober 2017</i> </p>
+	<h2> <i>December 2015 – Oktober 2017</i> </h2>
 
 
-	<p> Anställd som Konsult på Sigma. Uppdrag utfört på Göteborgs Stad - Intraservice som Supporttekniker. 
+	<p id="ReadMore3"> Anställd som Konsult på Sigma. Uppdrag utfört på Göteborgs Stad - Intraservice som Supporttekniker. 
 		Jag har arbetat efter schema på 2st avdelningar(Backoffice och Servicedesk) med 3 olika roller - Second line support, first line support och "Akut ärenden (Prioriterande ärenden)".
 
 		Backoffice – Support av inkommande incidenter och beställningsärenden via E-post.
@@ -104,9 +114,9 @@
 		 </p>
 	
 	<p>  </p>
-	
+
 	<div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		<button onclick="myFunction3()" id="ReadMoreHide3" class="dropbtn">Läs mer</button>
 		
 	  </div>
 	
@@ -114,10 +124,10 @@
 
 	<div id="bottom">
 		<h1> <b>Konsult Sigma IT Tech</b> </h1>
-		<p> <i>Oktober 2017 – pågående</i> </p>
+		<h2> <i>Oktober 2017 – pågående</i> </h2>
 	
 	
-		<p> Fortsatt anställd som Konsult för Sigma – denna gång ett uppdrag på RISE (Research institute of Sweden) I Borås. 
+		<p id="ReadMore4"> Fortsatt anställd som Konsult för Sigma – denna gång ett uppdrag på RISE (Research institute of Sweden) I Borås. 
 			Rollen på RISE var Servicedesktekniker (1Line Support) med telefon, epost, koordinering av inkomna ärenden och även support ute i verksamheten.
 			Jag är del av ett team på 4-5st heltidsanställda(+-3 studenter)  I Servicedesken som hanterar ca 600-900 ärenden I veckan. 
 			Vi har en väldigt hög lösningsgrad av alla inkomna ärenden vilket betyder att vi agerar avancerad 2nd line i många fall gällande test och felsökningar. (Jämnför med tidigare arbetsplatser)
@@ -135,18 +145,20 @@
 		<p>  </p>
 		
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+			<button onclick="myFunction4()" id="ReadMoreHide4" class="dropbtn">Läs mer</button>
 			
 		  </div>
 
 		</div>
+</div>
 
+<div id="lastsection">
 		<div id="utbildning">
 			<h1> <b>Utbildning</b> </h1>
-			<p> <i>2009-2019</i> </p>
+			<h2> <i>2009-2019</i> </h2>
 		
 		
-			<p> 
+			<p id="ReadMore5"> 
 			2009 – 2012 IT-teknik och support,  John Bauergymnasiet i Uddevalla
 			2012 – 2013 Linnéuniversitet IT-tekniker i Kalmar 
 			2018 – 2019 3D modellering och animation, Högskolan Gävle (Distanskurs)
@@ -155,17 +167,99 @@
 			
 			<p>  </p>
 			
+			<div class="dropdown">
+				<button onclick="myFunction5()" id="ReadMoreHide5" class="dropbtn">Läs mer</button>
+				
+			  </div>
+
 			
 			</div>
+	</div>
 
+	<div id="kontakt">
+		<h1> <b>Kontakt</b></h1>
+		<li>
+			<p>Namn</p>
+			<p>Epost</p>
+			<p>Telefon</p>
+			<p>Linkedin</p>
+			<p>Hemsida</p>
+		</li>
+
+
+	</div>
 
 	
 	</section>
 	
 	<script>
+		
 		function myFunction() {
-		document.getElementById("ReadMore").style.display = "block";
+		document.getElementById("wholesection").style.display = "block";
+		document.getElementById("lastsection").style.display  = "none";
+		document.getElementById("kontakt").style.display  = "none";
+
 		}
+		function myFunction0() {
+		document.getElementById("lastsection").style.display = "block";
+		document.getElementById("wholesection").style.display  = "none";
+		document.getElementById("kontakt").style.display  = "none";
+		
+		
+		}
+		function myFunction01() {
+		document.getElementById("kontakt").style.display = "block";
+		document.getElementById("wholesection").style.display  = "none";
+		document.getElementById("lastsection").style.display  = "none";
+		
+		}
+		function myFunction1() {
+		document.getElementById("ReadMore1").style.display = "block";
+		document.getElementById("ReadMoreHide1").style.display  = "none";
+
+		}
+		function myFunction2() {
+		document.getElementById("ReadMore2").style.display = "block";
+		document.getElementById("ReadMoreHide2").style.display  = "none";
+		}
+		function myFunction3() {
+		document.getElementById("ReadMore3").style.display = "block";
+		document.getElementById("ReadMoreHide3").style.display  = "none";
+		}
+		function myFunction4() {
+		document.getElementById("ReadMore4").style.display = "block";
+		document.getElementById("ReadMoreHide4").style.display  = "none";
+		}
+		function myFunction5() {
+		document.getElementById("ReadMore5").style.display = "block";
+		document.getElementById("ReadMoreHide5").style.display  = "none";
+		}
+
+
+
+	
+		function myFunction11() {
+		document.getElementById("ReadLess1").style.display = "block";
+		}
+		function myFunction22() {
+		document.getElementById("ReadLess2").style.display = "block";
+		}
+		function myFunction33() {
+		document.getElementById("ReadLess3").style.display = "block";
+		}
+		function myFunction44() {
+		document.getElementById("ReadLess4").style.display = "block";
+		}
+		function myFunction55() {
+		document.getElementById("ReadLess5").style.display = "block";
+		}
+
+
+
+
+
+
+
 		
 		</script>
 	

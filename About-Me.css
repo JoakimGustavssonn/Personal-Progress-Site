@@ -3,7 +3,7 @@ body {
 	
 	
  /* Location of the image */
-  background-image: url(IMG_4963.JPG);
+  background-image: url(IMG_4963_Optimized.JPG);
   background-color: rgba(238, 238, 238, 0.3) !important;
   background-blend-mode: color;
   
@@ -53,14 +53,25 @@ body {
   
 }
 
-.dropbtn {
-   background-color: #3498DB;
+.dropbtn{
+   background-color: rgb(16, 60, 90);
    color: white;
    padding: 16px;
    font-size: 16px;
    border: none;
    cursor: pointer;
  }
+ .up {
+   background-color: #3498DB;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+    border: none;
+   cursor: pointer;
+
+
+ }
+
  
  .dropbtn:hover, .dropbtn:focus {
    background-color: #2980B9;
@@ -81,12 +92,7 @@ body {
    z-index: 1;
  }
  
- .dropdown-content a {
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
- }
+ 
  
  .dropdown a:hover {background-color: #ddd;}
  
@@ -120,7 +126,24 @@ input[type=button]
    text-align: center;
 }
 
-#top, #middle, #bottom, #bottom1, #utbildning{
+.Startbuttons {
+   text-align: center;
+}
+
+h1 {
+
+   font-family: sans-serif;
+}
+
+h2 {
+
+   
+   font-size: 24px;
+   
+
+}
+
+#top, #middle, #bottom, #bottom1, #utbildning, #kontakt{
 	height: auto;
     width: 600px;
 	margin: auto;
@@ -136,7 +159,7 @@ input[type=button]
 	
 }
 
-#ReadMore {
+#wholesection, #lastsection, #ReadMore1, #ReadMore2, #ReadMore3, #ReadMore4, #ReadMore5, #kontakt {
   display: none;
 }
 

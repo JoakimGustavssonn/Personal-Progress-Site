@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>MySite</title>
     
-    <link href="Indexx.css" rel="stylesheet" type="text/css" />
+    <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" />
 	
   </head>
   
@@ -15,8 +15,38 @@
 	  
 	  <h1>Website is under development</h1>
 	
-  	</section>
-	
+    </section>
+    <script>
+    function add(id) {
+      var element = document.getElementById(id),
+          value = +element.value || 0;
+  
+      element.value = value + 1;
+  }
+  
+  function sub(id) {
+      var element = document.getElementById(id),
+          value = +element.value || 0;
+  
+      value--;
+      if (value < 0) {
+          value = 0;
+      }
+      element.value = value;
+  }
+</script>
+
+  <div class="range">
+    <label>Book</label>
+    <a href="#" onClick="sub('book')"><i class="fa fa-minus-circle" aria-hidden="true">-</i></a><input type="text" id="book" value="0" min="0">
+    <a href="#" onClick="add('book')"><i class="fa fa-plus-circle" aria-hidden="true">+</i></a>
+  </div>
+  
+  <div class="range">
+    <label>Pen</label>
+    <a href="#" onClick="sub('pen')"><i class="fa fa-minus-circle" aria-hidden="true">-</i></a><input type="text" id="pen" value="0" min="0">
+    <a href="#" onClick="add('pen')"> <i class="fa fa-plus-circle" aria-hidden="true">+</i></a>
+  </div>
 	
 
 	
