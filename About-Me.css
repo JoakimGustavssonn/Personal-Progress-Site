@@ -3,9 +3,10 @@ body {
 	
 	
  /* Location of the image */
-  background-image: url(IMG_4793.jpg);
+  background-image: url(IMG_4963.JPG);
   background-color: rgba(238, 238, 238, 0.3) !important;
   background-blend-mode: color;
+  
   
   
   /* Background image is centered vertically and horizontally at all times */
@@ -74,15 +75,21 @@ input[type=button]
 	
 }
 
-#top, #middle, #bottom{
-	height: 800px;
-    width: 450px;
+#me {
+
+   text-align: center;
+}
+
+#top, #middle, #bottom, #bottom1{
+	height: auto;
+    width: 600px;
 	margin: auto;
  	text-align:center;
 	border-left: 2px solid darkgrey;
 	border-right: 2px solid darkgrey;
 	border-bottom: 6px solid darkgrey;
-	background-color: hsla(0, 0%, 50%, 0.3);
+   background-color: hsla(0, 0%, 50%, 0.3);
+   color: white;
 	
 	
 	
