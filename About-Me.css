@@ -35,23 +35,7 @@ body {
 }
 
 
-.firstbutton {
-  display: inline-block;
-  padding: 12px 20px;
-  color: #cafaea;
-  border: 6px solid;
-  border-radius: 6px;
-  border-color: hsla(0, 0%, 50%, 0.3);
-  
-  font-weight: 300;
-  line-height: normal;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  
-  
-  
-}
+
 
 .dropbtn{
    background-color: rgb(16, 60, 90);
@@ -117,8 +101,25 @@ input[type=button]
 	margin: auto;
    padding-top: 2px;
    text-align:center;
+   font-family: sans-serif;
+   color: rgb(16, 60, 90);
+   font-variant: small-caps;
+
+
+   height: auto;
+   width: 600px;
+	margin: auto;
+ 	text-align:center;
+	
+	border-bottom: 2px solid rgb(16, 60, 90);
+   background-color: hsla(0, 0%, 50%, 0.3);
+   
 
 	
+}
+#kontakt p {
+
+   font-family: monospace;
 }
 
 #me {
@@ -150,7 +151,7 @@ h2 {
  	text-align:center;
 	border-left: 2px solid darkgrey;
 	border-right: 2px solid darkgrey;
-	border-bottom: 6px solid darkgrey;
+	border-bottom: 2px solid darkgrey;
    background-color: hsla(0, 0%, 50%, 0.3);
    color: rgb(0, 0, 0);
    
