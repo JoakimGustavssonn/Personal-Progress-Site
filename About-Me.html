@@ -12,7 +12,7 @@
   <body>
 	<section id="topcontent">
   	<p> <a class="firstbutton" id="Redirect" href ="Start.html" >  <b>Joakim Gustavsson</b> </a> </p>
-	
+	  <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" />
   	</section>
 	
 	
@@ -22,24 +22,14 @@
 	
 	<div id="me">
 
-	<img src="IMG_5971.JPEG" width="20%" height="20%" >
+	<img src="IMG_5971.JPEG" width="15%" height="15%" >
 
 	</div>
 	
 
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("ReadMore");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
 
-</script>
 
 
 
@@ -61,7 +51,11 @@ function myFunction() {
 		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
 		
 	  </div>
-	<input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" />
+	  <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		
+	  </div>
+	
 	
 	
 	</div>
@@ -80,6 +74,13 @@ function myFunction() {
 	
 	<p>  </p>
 	
+
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		
+	  </div>
+
+
 	</div>
 	
 	<div id="bottom1">
@@ -104,6 +105,10 @@ function myFunction() {
 	
 	<p>  </p>
 	
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+		
+	  </div>
 	
 	</div>
 
@@ -129,7 +134,11 @@ function myFunction() {
 		
 		<p>  </p>
 		
-		
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Läs mer</button>
+			
+		  </div>
+
 		</div>
 
 		<div id="utbildning">
@@ -153,7 +162,12 @@ function myFunction() {
 	
 	</section>
 	
+	<script>
+		function myFunction() {
+		document.getElementById("ReadMore").style.display = "block";
+		}
 		
+		</script>
 	
   </body>
   
