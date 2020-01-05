@@ -103,14 +103,7 @@ input[type=button]
    text-align:center;
    font-family: sans-serif;
    color: rgb(16, 60, 90);
-   font-variant: small-caps;
-
-
-   height: auto;
-   width: auto;
-	margin: auto;
- 	text-align:center;
-	
+   font-variant: small-caps;	
 	border-bottom: 2px solid rgb(16, 60, 90);
    background-color: hsla(0, 0%, 50%, 0.3);
    
@@ -132,10 +125,14 @@ input[type=button]
 #me {
 
    text-align: center;
+   margin:auto;
 }
+
+
 
 .Startbuttons {
    text-align: center;
+   margin:auto;
 }
 
 h1 {
@@ -158,7 +155,7 @@ h2 {
 
 #top, #middle, #bottom, #bottom1, #utbildning, #kontakt{
 	height: auto;
-    width: 600px;
+   width: 600px;
 	margin: auto;
  	text-align:center;
 	border-left: 2px solid darkgrey;
@@ -179,17 +176,13 @@ h2 {
 
 @media screen and (max-width: 768px) {
 
-  
-  
-   #topcontent p {
-    font-size: 00%;
-   }
+   #mepic {
 
-   #top, #middle, #bottom {
-   font-size: 50%;
-   width: 50%;
-   height: 50%;
+      height: 40%;
+      width: 40%;
    }
+  
+  
 
   
   }
