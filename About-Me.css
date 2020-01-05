@@ -168,6 +168,10 @@ h2 {
 	
 	
 }
+.ReadMoreH3 {
+
+   text-decoration: underline;
+}
 
 #wholesection, #lastsection, #ReadMore1, #ReadMore2, #ReadMore3, #ReadMore4, #ReadMore5, #kontakt {
   display: none;
