@@ -208,12 +208,24 @@ h2 {
           while the background image is loading */
        background-color: #464646;
        
-   
-       
-       
-     
-     
      }
+
+
+     #top, #middle, #bottom, #bottom1, #utbildning, #kontakt{
+      height: auto;
+      width: auto;
+      margin: auto;
+       text-align:center;
+      border-left: 2px solid darkgrey;
+      border-right: 2px solid darkgrey;
+      border-bottom: 2px solid darkgrey;
+      background-color: hsla(0, 0%, 50%, 0.3);
+      color: rgb(0, 0, 0);
+      
+      
+      
+      
+   }
   
 
   
