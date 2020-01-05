@@ -117,6 +117,13 @@ input[type=button]
 
 	
 }
+
+#utbildningtext{
+
+   font-size: 20px;
+   font-family: Georgia;
+   
+}
 #kontakt p {
 
    font-family: monospace;
