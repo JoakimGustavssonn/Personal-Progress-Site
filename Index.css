@@ -1,117 +1,241 @@
 body {
- font-family: Arial;
- color: SlateGray;
- 
- 
- 
+	
+	
+	
+ /* Location of the image */
+  background-image: url(IMG_4963_Optimized.JPG);
+  background-color: rgba(238, 238, 238, 0.3) !important;
+  background-blend-mode: color;
+  
+  
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  
+  
+  
+  
+
+
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+
+
+.dropbtn{
+   background-color: rgb(16, 60, 90);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+ }
+ .up {
+   background-color: #3498DB;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+    border: none;
+   cursor: pointer;
+
+
+ }
+
+ 
+ .dropbtn:hover, .dropbtn:focus {
+   background-color: #2980B9;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ 
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+
+
+input[type=button]
+{
+	
+  background-color: hsla(0, 0%, 50%, 0.8);
+  border: none;
+  color: white;
+  padding: 16px 32px;
   text-decoration: none;
+  margin: 4px 2px;
   
 }
-.topnav {
-  background-color: rgb(46, 129, 197);
-  overflow: hidden;
-  text-decoration: none;
-  
-}
 
-.topnav li {
-  text-decoration: none;
-  float: left;
-  color: #f2f2f2;
-  padding: 14px 50px;
-  text-decoration: none;
-  font-size: 25px;
- 
- 
-  
-}
-.topnav li a:link, a:visited {
 
-text-decoration: none;
-color: rgb(0, 0, 0);
+#topcontent p {
+	font-size: 60px;
+	margin: auto;
+   padding-top: 2px;
+   text-align:center;
+   font-family: sans-serif;
+   color: rgb(16, 60, 90);
+   font-variant: small-caps;	
+	border-bottom: 2px solid rgb(16, 60, 90);
+   background-color: hsla(0, 0%, 50%, 0.3);
+   
+
 	
 }
 
-.topnav li:hover {
-  background-color: #ddd;
-  color: black;
-  
+#utbildningtext{
+
+   font-size: 22px;
+   font-family: Georgia;
+
+}
+#kontakt p {
+
+   font-family: monospace;
+}
+
+#me {
+
+   text-align: center;
+   margin:auto;
 }
 
 
 
-
-
-#Menybutton1 {
-	
-	color: green;
-	padding-top: 40px;
-}
-#Menybutton2 {
-	
-	color: orange;
-	
-}
-#Menybutton3 {
-	
-	color: blue;
-}
-#Menybutton4 {
-	
-	color: red;
+.Startbuttons {
+   text-align: center;
+   margin:auto;
 }
 
 h1 {
- font-size: 100%;
+
+   font-family: sans-serif;
+   font-size: 24px;
 }
 
 h2 {
- color: Orange;
- text-transform: uppercase;
- font-weight: 100;
+
+   
+   font-size: 24px;
+   
+
 }
 
-img {
- width: 100%;
+#CV {
+
+   text-align: center;
 }
 
+#top, #middle, #bottom, #bottom1, #utbildning, #kontakt{
+	height: auto;
+   width: 600px;
+	margin: auto;
+ 	text-align:center;
+	border-left: 2px solid darkgrey;
+	border-right: 2px solid darkgrey;
+	border-bottom: 2px solid darkgrey;
+   background-color: hsla(0, 0%, 50%, 0.3);
+   color: rgb(0, 0, 0);
+   
+	
+	
+	
+}
+.ReadMoreH3 {
 
-footer {
- margin-top: 70px;
- background-color: Orange;
- color: White;
+   text-decoration: underline;
 }
 
-footer p {
- text-align: center;
- padding-top: 15px;
- padding-bottom: 15px;
+#wholesection, #lastsection, #ReadMore1, #ReadMore2, #ReadMore3, #ReadMore4, #ReadMore5, #kontakt {
+  display: none;
 }
-
-#container {
- width: 60%;
- margin: auto;
- 
- 
-}
-
 
 
 @media screen and (max-width: 768px) {
 
- #container {
-  width: 90%;
+   #mepic {
 
- }
+      height: 40%;
+      width: 40%;
+   }
+   
+   body {
+	
+      /* Location of the image */
+       background-image: url(IMG_4963_Optimized_MediaQ.JPG);
+       background-color: rgba(238, 238, 238, 0.3) !important;
+       background-blend-mode: color;
+       
+              
+       /* Background image is centered vertically and horizontally at all times */
+       background-position: center center;
+       
+       /* Background image doesn't tile */
+       background-repeat: no-repeat;
+       
+       /* Background image is fixed in the viewport so that it doesn't move when 
+          the content's height is greater than the image's height */
+       background-attachment: fixed;
+       
+       /* This is what makes the background image rescale based
+          on the container's size */
+       background-size: cover;
+       
+       /* Set a background color that will be displayed
+          while the background image is loading */
+       background-color: #464646;
+       
+     }
 
- h1 {
-  font-size: 200%;
- }
 
-}
+     #top, #middle, #bottom, #bottom1, #utbildning, #kontakt{
+      height: auto;
+      width: auto;
+      margin: auto;
+       text-align:center;
+      border-left: 2px solid darkgrey;
+      border-right: 2px solid darkgrey;
+      border-bottom: 2px solid darkgrey;
+      background-color: hsla(0, 0%, 50%, 0.3);
+      color: rgb(0, 0, 0);
+      
+      
+      
+      
+   }
+  
+
+  
+  }
+
+
+
+
