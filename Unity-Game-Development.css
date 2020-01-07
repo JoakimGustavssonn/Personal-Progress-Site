@@ -1,0 +1,173 @@
+body {
+	
+	
+	
+    /* Location of the image */
+     background-image: url(Dark_Theme_Concept.png);
+     background-color: rgba(238, 238, 238, 0.3) !important;
+     background-blend-mode: color;
+     
+     
+     /* Background image is centered vertically and horizontally at all times */
+     background-position: center center;
+     
+     /* Background image doesn't tile */
+     background-repeat: no-repeat;
+     
+     /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+     background-attachment: fixed;
+     
+     /* This is what makes the background image rescale based
+        on the container's size */
+     background-size: cover;
+     
+     /* Set a background color that will be displayed
+        while the background image is loading */
+     background-color: #464646;
+     background-position: top;
+     
+     
+     
+   
+   
+   }
+   
+   
+   .firstbutton {
+     display: inline-block;
+     padding: 12px 20px;
+     color: #ffffff;
+     border: 6px solid;
+     border-radius: 24px;
+     border-color: hsla(0, 0%, 50%, 0.3);
+     
+     font-weight: 700;
+     line-height: normal;
+     text-decoration: none;
+     text-align: center;
+     text-transform: uppercase;
+     
+     
+     
+   }
+   
+   input[type=button]
+   {
+       
+     background-color: hsla(0, 0%, 50%, 0.8);
+     border: none;
+     color: white;
+     padding: 16px 32px;
+     text-decoration: none;
+     margin: 4px 2px;
+     
+   }
+   
+   #topnav ul {
+      clear:left;
+      float:left;
+      list-style:none;
+      margin:auto;
+      padding:0;
+      position:relative;
+      left:50%;
+      text-align:center;
+      text-decoration: none;
+      
+      
+    }
+   
+   
+   #topnav {
+      margin: auto;
+      float: left;
+      text-align:center;
+      width:100%;
+      
+      overflow: hidden;
+      text-decoration: none;
+      
+      
+    }
+    
+    #topnav ul li {
+        
+      color: #f2f2f2;
+      text-decoration: none;
+      font-size: 25px;
+      
+      float:left;
+      list-style:none;
+      margin:auto;
+      padding:auto;
+      position:relative;
+      right:50%;
+      
+     
+     
+      
+    }
+   
+   
+   
+   #topcontent p {
+       font-size: 60px;
+       margin: auto;
+      padding-top: 2px;
+      text-align:center;
+   
+       
+   }
+   
+   #top, #middle, #bottom{
+       height: 100%;
+       width: 600px;
+       margin: auto;
+        text-align:center;
+       border-left: 2px solid darkgrey;
+       border-right: 2px solid darkgrey;
+       border-bottom: 2px solid darkgrey;
+      background-color: hsla(0, 0%, 50%, 0.3);
+      font-weight: bold;
+      color: white;
+          
+   }
+   
+   .Topp {
+   
+      padding-top: 50px;
+   
+   }
+   
+   
+   #myVideo {
+       
+      width: 100%;
+      object-fit: cover;
+      z-index: -100;
+      overflow: hidden;
+    }
+   
+   
+   @media screen and (max-width: 768px) {
+   
+     
+     
+      #topcontent p {
+       font-size: 00%;
+      }
+   
+      #top, #middle, #bottom {
+      font-size: 50%;
+      width: 50%;
+      height: 50%;
+      }
+   
+     
+     }
+   
+   
+   
+   
+   
