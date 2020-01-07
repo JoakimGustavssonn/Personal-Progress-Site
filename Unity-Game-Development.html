@@ -6,10 +6,41 @@
     <title>Site is under development</title>
     
     <link href="Blender.css" rel="stylesheet" type="text/css" />
-	
+    
+    
+    <meta charset="utf-8">
+      
+    <link rel="shortcut icon" href="test/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="test/TemplateData/style.css">
+    <script src="test/TemplateData/UnityProgress.js"></script>
+    <script src="test/Build/UnityLoader.js"></script>
+
+  </head>
+  
+    
+
+
   </head>
   
   <body>
+
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          
+          
+
+
+        </div>
+      </div>
+  
+
+
+
+
+
 	<section id="topcontent">
   	<p> <a class="firstbutton" id="Redirect" href ="Start.html" >  <b>Unity Projects Test site</b> </a> </p>
 	
@@ -17,7 +48,8 @@
 	
 	
 	<section id="divcenter">
-	</section>
+    </section>
+    
 	
 	
 
@@ -25,7 +57,7 @@
 		<ul>
 			<li>  <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" /></li>
 			<li>  <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" /> </li>
-			<li>  <input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" /> </li>
+			
 		</ul>
 	</div>
 	
@@ -49,10 +81,12 @@
 						
 					
 
-						<input type="button" value="Bottom" onClick="document.getElementById('bottom').scrollIntoView();" />
 						
 						
-						</div>
+						
+                        </div>
+                        
+                        <input id="Start Game" type="button" value="Start Game" onclick="doFunction();" />
 							
 						<div id="middle">
 						<p> <b>This is middle</b> </p>
@@ -94,7 +128,26 @@
 
 	</section>
 	
-		
+    <script>
+
+        function doFunction() {
+            var unityInstance = UnityLoader.instantiate("unityContainer", "test/Build/test.json", {onProgress: UnityProgress});
+        
+                }
+              
+        
+        
+        document.getElementById("Start Game").onclick = doFunction;
+        
+        var el = document.getElementById("Start Game");
+        if (el.addEventListener)
+        el.addEventListener("click", doFunction, false);
+        else if (el.attachEvent)
+        el.attachEvent('onclick', doFunction);
+        
+        
+        
+            </script>
 	
   </body>
   
