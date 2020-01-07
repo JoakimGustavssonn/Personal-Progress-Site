@@ -86,7 +86,7 @@
 						
                         </div>
                         
-                        <input id="Start Game" type="button" value="Start Game" onclick="doFunction();" />
+                        <input id="Start Game" type="button" value="Start Game" onclick="StartBeachOneGame();" />
 							
 						<div id="middle">
 						<p> <b>This is middle</b> </p>
@@ -130,20 +130,21 @@
 	
     <script>
 
-        function doFunction() {
+        function StartBeachOneGame() {
             var unityInstance = UnityLoader.instantiate("unityContainer", "test/Build/test.json", {onProgress: UnityProgress});
         
                 }
               
         
         
-        document.getElementById("Start Game").onclick = doFunction;
-        
+        document.getElementById("Start Game").onclick = StartBeachOneGame;
         var el = document.getElementById("Start Game");
+
         if (el.addEventListener)
-        el.addEventListener("click", doFunction, false);
+        el.addEventListener("click", StartBeachOneGame, false);
+
         else if (el.attachEvent)
-        el.attachEvent('onclick', doFunction);
+        el.attachEvent('onclick', StartBeachOneGame);
         
         
         
