@@ -65,13 +65,13 @@ function loadModels() {
     const model = gltf.scene.children[ 0 ];
     model.position.copy( position );
 
-    const animation = gltf.animations[ 0 ];
+    /*const animation = gltf.animations[ 0 ];
 
     const mixer = new THREE.AnimationMixer( model );
     mixers.push( mixer );
 
     const action = mixer.clipAction( animation );
-    action.play();
+    action.play(); */
 
     scene.add( model );
 
@@ -87,13 +87,8 @@ function loadModels() {
   // load the first model. Each model is loaded asynchronously,
   // so don't make any assumption about which one will finish loading first
   const parrotPosition = new THREE.Vector3( 0, 0, 2.5 );
-  loader.load( 'models/Parrot.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
+  loader.load( 'models/Sculpttest.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
 
-  const flamingoPosition = new THREE.Vector3( 7.5, 0, -10 );
-  loader.load( 'models/Flamingo.glb', gltf => onLoad( gltf, flamingoPosition ), onProgress, onError );
-
-  const storkPosition = new THREE.Vector3( 0, -2.5, -10 );
-  loader.load( 'models/Stork.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
 
 }
 
