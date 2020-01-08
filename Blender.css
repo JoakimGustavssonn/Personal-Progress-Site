@@ -9,24 +9,24 @@ body {
   
   
   /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
+  background-position: center top;
   
   /* Background image doesn't tile */
   background-repeat: no-repeat;
   
   /* Background image is fixed in the viewport so that it doesn't move when 
      the content's height is greater than the image's height */
-  background-attachment: fixed;
+  /*background-attachment: fixed;
   
   /* This is what makes the background image rescale based
      on the container's size */
-  background-size: cover;
+  background-size: auto;
   
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #464646;
   background-position: top;
-  
+  display: block;
   
   
 
@@ -128,11 +128,41 @@ input[type=button]
 	border-left: 2px solid darkgrey;
 	border-right: 2px solid darkgrey;
 	border-bottom: 2px solid darkgrey;
-   background-color: hsla(0, 0%, 50%, 0.3);
+   background-color: hsla(0, 0%, 0%, 0.8);
    font-weight: bold;
    color: white;
-   	
+      padding-top: 200px;
 }
+
+
+#bottom2{
+   height: 1900px;
+   width: 1200px;
+  margin: auto;
+   text-align:center;
+  border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  border-bottom: 2px solid darkgrey;
+  background-color: hsla(0, 0%, 50%, 0.3);
+  font-weight: bold;
+  color: white;
+}
+
+.block_1900h600w_CSS151 {
+   height: 1200px;
+   width: 600px;
+  margin: auto;
+   text-align:center;
+   
+}
+
+
+#bottom2p{
+
+font-size: 45px;
+
+}
+
 
 .Topp {
 

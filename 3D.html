@@ -7,37 +7,55 @@
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }
 		</style>
+
+<script src="JS/Three.js"></script>
+		
+<script src="JS/GLTFLoader.js"></script>
+
 	</head>
 	<body>
-		<script src="JS/Three.js"></script>
-		// global script
-<script src="JS/GLTFLoader.js"></script>
+		
         
 		<script> // Our Javascript will go here.
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
+function loadModels() {
 
-			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
+const loader = new THREE.GLTFLoader();
 
-			camera.position.z = 5;
+// A reusable function to set up the models. We're passing in a position parameter
+// so that they can be individually placed around the scene
+const onLoad = ( gltf, position ) => {
 
-			var animate = function () {
-				requestAnimationFrame( animate );
+  const model = gltf.scene.children[ 0 ];
+  model.position.copy( position );
 
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
+  const animation = gltf.animations[ 0 ];
 
-				renderer.render( scene, camera );
-			};
+  const mixer = new THREE.AnimationMixer( model );
+  mixers.push( mixer );
 
-			animate();
+  const action = mixer.clipAction( animation );
+  action.play();
+
+  scene.add( model );
+
+};
+
+// the loader will report the loading progress to this function
+const onProgress = () => {};
+
+// the loader will send any error messages to this function, and we'll log
+// them to to console
+const onError = ( errorMessage ) => { console.log( errorMessage ); };
+
+// load the first model. Each model is loaded asynchronously,
+// so don't make any assumption about which one will finish loading first
+const parrotPosition = new THREE.Vector3( 0, 0, 2.5 );
+loader.load( 'Egg.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
+
+
+}
+
 		</script>
 	</body>
 </html>
