@@ -87,7 +87,7 @@ function loadModels() {
   // load the first model. Each model is loaded asynchronously,
   // so don't make any assumption about which one will finish loading first
   const parrotPosition = new THREE.Vector3( 0, 0, 2.5 );
-  loader.load( 'Badring.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
+  loader.load( 'Models/Egg.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
 
   
 }
