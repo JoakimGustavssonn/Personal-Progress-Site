@@ -93,7 +93,7 @@ function loadModels() {
   loader.load( 'models/Parrdot - Copy.glb', gltf => onLoad( gltf, flamingoPosition ), onProgress, onError );
 
   const storkPosition = new THREE.Vector3( 0, -2.5, -10 );
-  loader.load( 'models/', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
+  loader.load( 'models/HOUSE_MDALblend.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
 
 }
 
