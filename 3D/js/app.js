@@ -11,9 +11,12 @@ const clock = new THREE.Clock();
 function init() {
 
   container = document.querySelector( '#scene-container' );
+  
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0x8FBCD4 );
+
+ 
 
   createCamera();
   createControls();
@@ -35,11 +38,14 @@ function createCamera() {
   camera = new THREE.PerspectiveCamera( 35, container.clientWidth / container.clientHeight, 1, 100 );
   camera.position.set( -1.5, 1.5, 6.5 );
 
+
+
 }
 
 function createControls() {
 
   controls = new THREE.OrbitControls( camera, container );
+ 
 
 }
 
@@ -57,7 +63,7 @@ function createLights() {
 function loadModels() {
 
   const loader = new THREE.GLTFLoader();
-
+  
   // A reusable function to set up the models. We're passing in a position parameter
   // so that they can be individually placed around the scene
   const onLoad = ( gltf, position ) => {
@@ -74,6 +80,7 @@ function loadModels() {
     action.play();*/
 
     scene.add( model );
+    
 
   };
 
@@ -87,13 +94,13 @@ function loadModels() {
   // load the first model. Each model is loaded asynchronously,
   // so don't make any assumption about which one will finish loading first
   const parrotPosition = new THREE.Vector3( 0, 0, 2.5 );
-  loader.load( 'models/Sculpttest.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
+  loader.load( '3D/models/Sculpttest.glb', gltf => onLoad( gltf, parrotPosition ), onProgress, onError );
 
   const flamingoPosition = new THREE.Vector3( 7.5, 0, -10 );
-  loader.load( 'models/Parrdot - Copy.glb', gltf => onLoad( gltf, flamingoPosition ), onProgress, onError );
+  loader.load( '3D/models/Parrdot - Copy.glb', gltf => onLoad( gltf, flamingoPosition ), onProgress, onError );
 
   const storkPosition = new THREE.Vector3( 0, -2.5, -10 );
-  loader.load( 'models/HOUSE_MDALblend.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
+  loader.load( '3D/models/HOUSE_MDALblend.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
 
 }
 
@@ -109,8 +116,10 @@ function createRenderer() {
   renderer.gammaOutput = true;
 
   renderer.physicallyCorrectLights = true;
-
   container.appendChild( renderer.domElement );
+
+
+  
 
 }
 
@@ -129,6 +138,7 @@ function update() {
 function render() {
 
   renderer.render( scene, camera );
+  
 
 }
 
