@@ -108,7 +108,20 @@ input[type=button]
   
    
  }
-
+ .info {
+   display: none;
+   padding: 20px;
+   border: 1px solid #000;
+   
+ }
+ 
+ .box {
+   width: 500px;
+   margin-bottom: 50px;
+ }
+ .is-open {
+    display: block;
+ }
 
 
 #topcontent p {
