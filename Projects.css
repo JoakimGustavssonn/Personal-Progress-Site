@@ -13,40 +13,48 @@ body {
  
  ul {
    list-style-type: none;
-   margin: 0;
-   padding: 0;
-   text-decoration: none;
+  
    
  }
  .topnav {
-   background-color: rgb(46, 129, 197);
+   background-color: rgb(6, 37, 36);
    overflow: hidden;
-   text-decoration: none;
+   margin: auto;
    
- }
+   }
+
+   .topnav li a {
+
+    color:white;
+    margin: auto;
+   }
+
+   .topnav ul {
+    list-style-type: none;
+    padding: 0;  
+ 
+   width: 50%;
+   margin: auto;
+ 
+   }
  
  .topnav li {
-   text-decoration: none;
-   float: left;
-   color: #f2f2f2;
-   padding: 14px 50px;
-   text-decoration: none;
-   font-size: 25px;
-  
-  
    
+   float: left;
+   padding: 14px 50px;
+   font-size: 25px;  
  }
  .topnav li a:link, a:visited {
  
  text-decoration: none;
- color: rgb(0, 0, 0);
-   
+ color: white;
  }
  
  .topnav li:hover {
-   background-color: #ddd;
-   color: black;
    
+   background-color: green;
+   color: green;
+      
  }
   .ProjectList {
 
@@ -61,16 +69,19 @@ text-align: center;
     float: center;
 	  margin: 15px;
     text-align:center;
+    
   border-top: 2px solid darkgrey;
 	border-left: 2px solid darkgrey;
 	border-right: 2px solid darkgrey;
   border-bottom: 2px solid darkgrey;
   padding: 10px;
+  font-size: 55px;
   
   }
 
   .ProjectList ul {
-
+   list-style-type: none;
+   padding: 0;  
 
   width: 50%;
   margin: auto;

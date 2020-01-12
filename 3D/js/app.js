@@ -85,15 +85,14 @@ function loadModels() {
   };
 
   
-  var el = document.getElementById("target");
-  el.addEventListener("click", onclick, false);
+  var targetEl = document.getElementById("target");
+  targetEl.addEventListener("click", onclick, false);
 
 function onclick(){
 
-  const storkPosition = new THREE.Vector3( 0, 5.5, 10 );
-  var model2 = loader.load( '3D/models/Sculpttest.glb', gltf => onLoad( gltf, storkPosition ));
-      
-  
+  var sculpttestPosition = new THREE.Vector3( 2, 0, 1 );
+  var model = loader.load( '3D/models/Sculpttest.glb', gltf => onLoad( gltf, sculpttestPosition ));
+     
       /*const animation = gltf.animations[ 0 ];
   
       const mixer = new THREE.AnimationMixer( model );
@@ -102,10 +101,33 @@ function onclick(){
       const action = mixer.clipAction( animation );
       action.play();*/
       
-      scene.add( model2 );
+      scene.add( model );
   
   
     };
+
+    var target2El = document.getElementById("target2");
+    target2El.addEventListener("click", onclick2, false);
+
+function onclick2(){
+
+  var sculpttestPosition = new THREE.Vector3( -4, 0, -5 );
+  var model = loader.load( '3D/models/Egg.glb', gltf => onLoad( gltf, sculpttestPosition ));
+     
+      /*const animation = gltf.animations[ 0 ];
+  
+      const mixer = new THREE.AnimationMixer( model );
+      mixers.push( mixer );
+  
+      const action = mixer.clipAction( animation );
+      action.play();*/
+      
+      scene.add( model );
+  
+  
+    };
+
+    
   
     
 
@@ -129,7 +151,7 @@ function onclick(){
   loader.load( '3D/models/Parrdot - Copy.glb', gltf => onLoad( gltf, flamingoPosition ), onProgress, onError );
 
   const storkPosition = new THREE.Vector3( 0, -2.5, -10 );
-  loader.load( '3D/models/HOUSE_MDALblend.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
+  loader.load( '3D/models/Badring.glb', gltf => onLoad( gltf, storkPosition ), onProgress, onError );
 
   
 

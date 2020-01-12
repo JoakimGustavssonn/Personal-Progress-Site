@@ -6,7 +6,6 @@
     <title>MySite</title>
     
 	<link href="Blender.css" rel="stylesheet" type="text/css" />
-	<link href="3D/main.css" rel="stylesheet" type="text/css">
 	<script src="3D/js/vendor/three/three.js"></script>
 	<script src="3D/js/vendor/three/OrbitControls.js"></script>
 	<script src="3D/js/vendor/three/GLTFLoader.js"></script>
@@ -175,13 +174,14 @@
 						
 						<p> 
 
-							<video autoplay muted loop id="myVideo" height="400px" width="400px">
+							<video muted loop id="myVideo" height="400px" width="400px">
 								<source src="Projekt_House_preview.mp4" type="video/mp4"  >
 								Your browser does not support HTML5 video.
 							</video> 
 
 						</p>
-						<p id="target">Click HERE to add an object.</p>
+						<input id ="target" type="button" value="Add a 3D model">
+						<input id ="target2" type="button" value="Add an EGG 3D model">
 
 						
 						<div id="scene-container">
