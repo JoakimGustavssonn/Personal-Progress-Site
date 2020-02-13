@@ -19,8 +19,11 @@ body {
  .topnav {
    background-color: rgb(6, 37, 36);
    overflow: hidden;
-   margin: auto;
    
+   border-top: 4px solid rgb(37, 41, 39);
+	border-left: 4px solid rgb(37, 41, 39);
+	border-right: 4px solid rgb(37, 41, 39);
+  border-bottom: 4px solid rgb(37, 41, 39);
    }
 
    .topnav li a {
@@ -32,7 +35,7 @@ body {
    .topnav ul {
     list-style-type: none;
     padding: 0;  
- 
+  height: 180px ;
    width: 50%;
    margin: auto;
  
@@ -41,8 +44,10 @@ body {
  .topnav li {
    
    float: top;
-   padding: 14px 50px;
-   font-size: 25px;  
+   padding: 14px auto;
+   font-size: 45px;  
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
  }
  .topnav li a:link, a:visited {
  
@@ -52,10 +57,13 @@ body {
  
  .topnav li:hover {
    
-   background-color: rgb(52, 85, 52);
   
-      
- }
+  
+  font-size: 58px;
+  
+  width: 280px;
+
+}
   .ProjectList {
 
 text-align: center;
@@ -64,8 +72,8 @@ text-align: center;
 
   .ProjectList li {
 
-	  height: 450px;
-    width: 600px;
+	  height: 100%;
+    width: 50%;
     float: center;
 	  margin: 15px;
     text-align:center;
@@ -75,7 +83,8 @@ text-align: center;
 	border-right: 2px solid darkgrey;
   border-bottom: 2px solid darkgrey;
   padding: 10px;
-  font-size: 55px;
+
+  
   
   }
 
@@ -129,10 +138,7 @@ text-align: center;
 
   @media screen and (max-width: 768px) {
 
-    #container {
-     width: 90%;
-   
-    }
+    
    
   
    

@@ -3,29 +3,28 @@ body {
 	
 	
  /* Location of the image */
-  background-image: url(Dark_Theme_Concept.png);
+  background-image: url(Boats.JPG);
   background-color: rgba(238, 238, 238, 0.3) !important;
   background-blend-mode: color;
   
   
   /* Background image is centered vertically and horizontally at all times */
-  background-position: center top;
+  background-position: center center;
   
   /* Background image doesn't tile */
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
   /* Background image is fixed in the viewport so that it doesn't move when 
      the content's height is greater than the image's height */
   /*background-attachment: fixed;
   
   /* This is what makes the background image rescale based
      on the container's size */
-  background-size: auto;
+  background-size: cover;
   
   /* Set a background color that will be displayed
      while the background image is loading */
   background-color: #464646;
-  background-position: top;
   display: block;
   
   
@@ -35,10 +34,17 @@ body {
 
 #scene-container {
    margin: auto;
-   width: 900px;
+   width: 800px;
    height: 500px;
-   background-color: grey;
-   
+      
+  
+ }
+
+ #scene-container2 {
+   margin: auto;
+   width: 500px;
+   height: 500px;
+      
   
  }
 
